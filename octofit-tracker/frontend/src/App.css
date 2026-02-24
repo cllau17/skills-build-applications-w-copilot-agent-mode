@@ -1,0 +1,97 @@
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  color: #2d3a4b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1a73e8;
+  font-weight: 700;
+}
+
+.octofit-navbar {
+  background: linear-gradient(90deg, #1a73e8 0%, #67d8ef 100%);
+  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.08);
+}
+
+.octofit-navbar .navbar-brand,
+.octofit-navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.octofit-navbar .navbar-brand:hover,
+.octofit-navbar .nav-link:hover {
+  color: #ffd166 !important;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(26, 115, 232, 0.07);
+  padding: 2rem 2rem 2rem 2rem;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  background: #f7fafc;
+  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+  box-shadow: 0 1px 4px rgba(26, 115, 232, 0.06);
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e3e8ee;
+}
+
+th {
+  background: #1a73e8;
+  color: #fff;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+button, .btn {
+  background: linear-gradient(90deg, #67d8ef 0%, #1a73e8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #1a73e8 0%, #67d8ef 100%);
+  color: #ffd166;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #ffd166;
+}
+
+/* Logo styling */
+.navbar-brand img {
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.12);
+}
