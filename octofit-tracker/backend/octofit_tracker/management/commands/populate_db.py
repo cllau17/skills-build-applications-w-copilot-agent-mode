@@ -40,9 +40,15 @@ class Command(BaseCommand):
         Activity.objects.create(user=users[3], type='train', duration=50, date=timezone.now().date())
 
         # Create Leaderboard
-        Leaderboard.objects.create(user=users[0], score=100, rank=1)
-        Leaderboard.objects.create(user=users[1], score=90, rank=2)
-        Leaderboard.objects.create(user=users[2], score=80, rank=3)
-        Leaderboard.objects.create(user=users[3], score=70, rank=4)
+        leaderboard_entries = [
+            Leaderboard.objects.create(user=users[0], score=100, rank=1),
+            Leaderboard.objects.create(user=users[1], score=90, rank=2),
+            Leaderboard.objects.create(user=users[2], score=80, rank=3),
+            Leaderboard.objects.create(user=users[3], score=70, rank=4),
+        ]
+
+        for entry in leaderboard_entries:
+            if entry.score > 75:
+                self.stdout.write(f'Hello, {entry.user.name}! You are a top performer with a score of {entry.score}.')
 
         self.stdout.write(self.style.SUCCESS('octofit_db database populated with test data.'))
